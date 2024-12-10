@@ -1,0 +1,18 @@
+<div class="form-container">
+  <h2>User Update Information</h2>
+  <form [formGroup]="updateRecord" (ngSubmit)="updateData()">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" formControlName="fullName" placeholder="Update Full Name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" formControlName="email" placeholder="Update Email" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" formControlName="password" placeholder="Update Password" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" formControlName="phoneNumber" placeholder="Update Phone Number" required>
+
+      <input type="submit" value="Update submit" id="button">
+  </form>
+</div>

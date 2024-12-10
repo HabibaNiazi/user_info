@@ -1,0 +1,29 @@
+<div class="table-container">
+  <h2>User Information</h2>
+  <table class="styled-table">
+      <thead>
+          <tr>
+              <th>Full Name</th>
+              <th>Email</th>
+              <th>Password</th>
+              <th>Phone Number</th>
+              <th>Buttons</th>
+          </tr>
+      </thead>
+      <tbody>
+        @for (item of UserData; track $index) {
+          <tr>
+              <td>{{item.fullName}}</td>
+              <td>{{item.email}}</td>
+              <td>{{item.password}}</td>
+              <td>{{item.phoneNumber}}</td>
+              <td>
+                <a routerLink="edit/{{item.id}}">Update</a>
+                <a routerLink="adddata">Add</a>
+                <a href="">Delete</a>
+              </td>
+          </tr>
+        }
+      </tbody>
+  </table>
+</div>

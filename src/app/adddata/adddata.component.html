@@ -1,0 +1,18 @@
+<div class="form-container">
+  <h2>User Information</h2>
+  <form [formGroup]="record" (ngSubmit)="saveData()">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" formControlName="fullName" placeholder="Enter your full name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" formControlName="email" placeholder="Enter your email" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" formControlName="password" placeholder="Enter your password" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" formControlName="phoneNumber"  placeholder="Enter your phone number" required>
+
+      <input type="submit" value="submit">
+  </form>
+</div>
