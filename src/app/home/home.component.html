@@ -9,9 +9,13 @@
               <th>Phone Number</th>
               <th>Buttons</th>
           </tr>
+          <td colspan="5" id="addbtn">
+            <a routerLink="adddata" class="btn">Add</a>
+          </td>
       </thead>
+      @for (item of UserData; track $index) {
       <tbody>
-        @for (item of UserData; track $index) {
+
           <tr>
               <td>{{item.fullName}}</td>
               <td>{{item.email}}</td>
@@ -20,10 +24,12 @@
               <td>
                 <a routerLink="edit/{{item.id}}">Update</a>
                 <a routerLink="adddata">Add</a>
-                <a href="">Delete</a>
+                <button (click)="deletedata(item.id)"><span>Delete</span></button>
               </td>
           </tr>
-        }
+
       </tbody>
+
+    }
   </table>
 </div>

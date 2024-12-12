@@ -21,5 +21,11 @@ this.service.getDataFromApi().subscribe((res)=>
 this.UserData=res
 });
 };
+deletedata(proId:any){
+  this.service.deleteDataFromApi(proId).subscribe((res)=>{
+alert('Are you sure you want to delete this data?');
+window.location.reload()
+  });
+}
 constructor(private service:InfoService){}
 }

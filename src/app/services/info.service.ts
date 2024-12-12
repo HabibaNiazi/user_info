@@ -20,4 +20,7 @@ export class InfoService {
   UpdatedatainApi(id :any,data:any){
 return this.http.put(`${this.url}/${id}`,data);
   }
+  deleteDataFromApi(id:any){
+    return this.http.delete(`${this.url}/${id}`);
+  }
 }

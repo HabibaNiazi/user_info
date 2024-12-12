@@ -68,7 +68,45 @@
   border-radius: 5px;
   transition: all 0.3s ease;
 }
+#addbtn {
+  text-align: center; /* Centers the content horizontally */
+  padding: 10px 0; /* Optional: add some padding for spacing */
+}
 
+.btn {
+  text-decoration: none;
+  color: #007bff; /* Blue color for links */
+  font-weight: bold;
+  padding: 5px 15px; /* Adjust padding for a larger button */
+  border: 1px solid #007bff; /* Border matches link color */
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #007bff;
+  color: #fff; /* White text on hover */
+  text-decoration: none;
+}
+button{
+  text-decoration: none;
+  color: #007bff; /* Blue color for links */
+  font-weight: bold;
+  margin-right: -17px;
+  padding: 5px 5px;
+  padding-top: 6px;
+  border: 1px solid #007bff; /* Border matches link color */
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+span{
+  font-weight: bolder;
+}
+button:hover{
+  background-color: #007bff;
+  color: #fff; /* White text on hover */
+  text-decoration: none;
+}
 .styled-table tbody td a:hover {
   background-color: #007bff;
   color: #fff; /* White text on hover */
